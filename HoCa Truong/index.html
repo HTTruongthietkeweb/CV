@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Hồ Cá của Trường</title>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/js/main.js"></script>
+    <style>
+        body {
+
+            background-image: url('assets/img/biensau.jpg');
+            height: 100%;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+
+
+            background-repeat: no-repeat;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="bg">
+        <div id="cá3"> <img src="./assets/img/cá3.gif" ; width="260" ; height="150"></div>
+        <div id="bachtuot"> <img src="./assets/img/bachtuot.gif" ; width="130" ; height="160"></div>
+        <div id="cua"> <img src="./assets/img/cua.gif" ; width="60" ; height="60"></div>
+        <div id="cá1"> <img src="./assets/img/cá1.gif" ; width="100" ; height="120"></div>
+        <div id="cá2"> <img src="./assets/img/cá2.gif" ; width="130" ; height="100"></div>
+    </div>
+    <button type="button" onclick="myFunction1()">Background 1</button>
+
+    <button type="button" onclick="myFunction2()">Background 2</button>
+    <audio id="myAudio1">
+        <source src="./assets/audio/waves-6907.mp3" type="audio/mpeg">
+    </audio>
+    <button onclick="playAudio1()" type="button">Play Audio 1</button>
+    <button onclick="pauseAudio1()" type="button">Pause Audio 1</button>
+
+    <script>
+        var x = document.getElementById("myAudio1");
+
+        function playAudio1() {
+            x.play();
+        }
+
+        function pauseAudio1() {
+            x.pause();
+        } 
+    </script>
+    <audio id="myAudio2">
+        <source src="./assets/audio/waves-on-the-rocks-72475.mp3" type="audio/mpeg">
+    </audio>
+    <button onclick="playAudio2()" type="button">Play Audio 2</button>
+    <button onclick="pauseAudio2()" type="button">Pause Audio 2</button>
+
+    <script>
+        var y = document.getElementById("myAudio2");
+
+        function playAudio2() {
+            y.play();
+        }
+
+        function pauseAudio2() {
+            y.pause();
+        } 
+    </script>
+</body>
+
+</html>
